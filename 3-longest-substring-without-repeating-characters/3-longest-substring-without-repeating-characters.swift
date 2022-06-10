@@ -6,7 +6,6 @@ class Solution {
         for a in arr {
             if let i = temp.firstIndex(of: String(a)) {
                 temp = temp.count-1 == i ? [] : Array(temp[i+1...temp.count-1])
-                print(temp)
             }
             temp.append(String(a))
             longest = max(longest, temp.count)
